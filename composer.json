@@ -1,46 +1,47 @@
 {
-    "name": "poppy/framework",
-    "description": "A framework for laravel module development.",
-    "license": "Apache-2.0",
-    "authors": [
-        {
-            "name": "Mark Zhao",
-            "email": "zhaody901@126.com"
-        }
-    ],
-    "require": {
-        "php": ">=7.4",
-        "ext-json": "*",
-        "ext-bcmath": "*",
-        "ext-mbstring": "*",
-        "ext-xml": "*",
-        "symfony/yaml": "^5"
+  "name": "poppy/framework",
+  "description": "A framework for laravel module development.",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Mark Zhao",
+      "email": "zhaody901@126.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "ext-bcmath": "*",
+    "ext-mbstring": "*",
+    "ext-xml": "*",
+    "symfony/yaml": "^5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Poppy\\Framework\\": "src/"
     },
-    "autoload": {
-        "psr-4": {
-            "Poppy\\Framework\\": "src/"
-        },
-        "files": [
-            "src/Support/functions.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Poppy\\Framework\\Tests\\": "tests/"
-        }
-    },
-    "bin": [
-        "bin/poppy"
-    ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "\\Poppy\\Framework\\FrameworkServiceProvider"
-            ]
-        }
-    },
-    "config": {
-        "preferred-install": "dist"
-    },
-    "minimum-stability": "dev"
+    "files": [
+      "src/Support/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Poppy\\Framework\\Tests\\": "tests/"
+    }
+  },
+  "bin": [
+    "bin/poppy"
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "\\Poppy\\Framework\\FrameworkServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "version": "4.3.0"
 }
